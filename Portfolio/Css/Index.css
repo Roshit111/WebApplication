@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 0 80px;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: space-between;
+    background-color: aliceblue;
+    z-index: 1000;
+}
+
+#logo-name {
+    display: flex;
+    align-items: center;
+}
+
+#logo-name img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#logo-name h1 {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+#logo-name h1 span {
+    font-size: 30px;
+}
+
+#page-links {
+    display: block;
+}
+
+#page-links ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#page-links ul li {
+    margin: 0 12px;
+}
+
+#page-links ul li a {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#page-links ul li a:hover {
+    color: blue;
+    transform: translateY(-2px);
+    font-weight: bolder;
+}
+
+#page-links ul li:hover {
+    margin-top: -2px;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    #page-links ul li {
+        margin: 0 10px;
+    }
+
+    #page-links ul li a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #page-links ul li {
+        margin: 0 8px;
+    }
+
+    #page-links ul li a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0 50px;
+    }
+
+    #page-links {
+        display: none;
+    }
+
+    #toggle-menu {
+        font-size: 24px;
+        display: block;
+        cursor: pointer;
+    }
+
+    #page-links.active {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: aliceblue;
+        z-index: 999;
+    }
+
+    #page-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    #page-links ul li {
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    header {
+        padding: 0 20px;
+    }
+
+    #logo-name h1 {
+        font-size: 18px;
+    }
+
+    #logo-name h1 span {
+        font-size: 24px;
+    }
+
+    #toggle-menu {
+        font-size: 20px;
+    }
+
+    #page-links ul li a {
+        font-size: 10px;
+    }
+}

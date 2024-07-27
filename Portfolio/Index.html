@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio || Roshit</title>
+    <link rel="stylesheet" href="./Css/Index.css" />
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/fe1c332f78.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <section id="logo-name">
+        <img src="./Images/logo.jpeg" alt="Roshit's Logo" />
+        <h1><span>R</span>oshit</h1>
+      </section>
+      <div id="toggle-menu">
+        <i class="fa-solid fa-bars" id="btn"></i>
+      </div>
+      <section id="page-links">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              About me!
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-graduation-cap"></i>
+              Education
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-laptop-file"></i>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-bolt"></i>
+              Experience
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-phone"></i>
+              Contact me!
+            </a>
+          </li>
+        </ul>
+      </section>
+    </header>
+    <main id="main-content">
+      <!-- Main content goes here -->
+    </main>
+    <footer>
+      <!-- Footer content goes here -->
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var btn = document.getElementById("btn");
+        var nav = document.getElementById("page-links");
+
+        btn.addEventListener("click", function () {
+          nav.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
